@@ -1,4 +1,12 @@
 /* Empty. Add your own CSS if you like */
+.tabs-top > .tabs, .tabs.tabs-top {
+    top: 0 !important;
+}
+
+.has-tabs-top {
+    top: 54px !important;
+}
+
 .timalipic {
   background: url(../img/Ali_Forman_pic.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
