@@ -1,4 +1,30 @@
 /* Empty. Add your own CSS if you like */
+h1 {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: yellow;
+}
+h3 {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+p {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .tabs-top > .tabs, .tabs.tabs-top {
     top: 0 !important;
 }
@@ -8,7 +34,7 @@
 }
 
 .timalipic {
-  background: url(../img/Ali_Forman_pic.jpg) no-repeat center center fixed;
+  background: url(../img/23crop.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,7 +66,7 @@
 }
 
 .lizzypic {
-  background: url(../img/Ali_Forman_pic.jpg) no-repeat center center fixed;
+  background: url(../img/lizzy/Lizzy3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
