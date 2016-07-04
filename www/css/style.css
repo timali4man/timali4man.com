@@ -25,6 +25,26 @@ p {
   line-height: 20px;
 }
 
+.timlink {
+  width: 45%;
+  height: 600px;
+  position: absolute;
+  left: 1%;
+  margin-top: 20%;
+  display: block;
+  z-index: 2;
+}
+
+.alilink {
+  width: 45%;
+  height: 600px;
+  position: absolute;
+  right: 1%;
+  margin-top: 60%;
+  display: block;
+  z-index: 2;
+}
+
 .tabs-top > .tabs, .tabs.tabs-top {
     top: 0 !important;
 }
