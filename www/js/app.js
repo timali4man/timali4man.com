@@ -36,11 +36,11 @@ angular.module('starter', ['ionic'])
       }
     })
 
-    .state('tabs.list', {
+    .state('tabs.portfolios', {
       url: '/list',
       views: {
         'list-tab' : {
-          templateUrl: 'templates/list.html',
+          templateUrl: 'templates/portfolios.html',
           controller: 'ListController'
         }
       }
@@ -88,7 +88,7 @@ angular.module('starter', ['ionic'])
 
 .controller('ListController', ['$scope', '$http', function($scope, $http) {
     $http.get('js/data.json').success(function(data) {
-      $scope.artists = data;  
+      $scope.artists = data;
 
       $scope.onItemDelete = function(item) {
         $scope.artists.splice($scope.artists.indexOf(item), 1);
@@ -97,7 +97,7 @@ angular.module('starter', ['ionic'])
       $scope.doRefresh =function() {
       $http.get('js/data.json').success(function(data) {
           $scope.artists = data;
-          $scope.$broadcast('scroll.refreshComplete'); 
+          $scope.$broadcast('scroll.refreshComplete');
         });
       }
 
