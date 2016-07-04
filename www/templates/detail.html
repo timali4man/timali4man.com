@@ -1,12 +1,14 @@
-<ion-view hide-nav-bar="true">
-
-  <ion-content
-    class="has-subheader">
-    <ion-list>
+<ion-header-bar class="bar-positive">
+  <h2 class="title">More Info</h2>
+</ion-header-bar> 
+<ion-view>
+<ion-content>
+    <ion-list class="list-inset">
       <ion-item
-      ng-repeat='item in artists'
+      ng-repeat="item in artists | filter: {
+      shortname: whichartist }"
       class="item-thumbnail-left
-        item-text-wrap" href="#/tab/list/{{ item.shortname }}">
+        item-text-wrap">
         <img ng-src="http://placehold.it/80x80"
           alt="{{ item.name }} Photo">
         <h2>{{item.name}}</h2>
@@ -16,4 +18,5 @@
       </ion-item>
     </ion-list>
   </ion-content>
+</ion-content>
 </ion-view>
