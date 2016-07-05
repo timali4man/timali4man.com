@@ -47,6 +47,18 @@ p {
   z-index: 2;
 }
 
+.full-image {
+  width: 70%;
+}
+
+.item {
+  text-align: center;
+}
+
+.item > p {
+  text-align: left;
+}
+
 .tabs-top > .tabs, .tabs.tabs-top {
     top: 0 !important;
 }
