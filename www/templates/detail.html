@@ -1,8 +1,5 @@
-<!-- <ion-header-bar class="bar-positive">
-  <h2 class="title">More Info</h2>
-</ion-header-bar>  -->
 <ion-view>
-<ion-content>
+  <ion-content>
     <ion-list class="list-inset">
       <ion-item
       ng-repeat="item in artists | filter: {
@@ -11,12 +8,11 @@
         item-text-wrap">
         <img ng-src="http://placehold.it/80x80"
           alt="{{ item.name }} Photo">
-        <h2>{{item.name}}</h2>
+        <h3>{{item.name}}</h3>
         <p>{{item.reknown}}</p>
         <p>{{item.bio | limitTo: 10000}}
         {{ item.bio.length > 10000 ? '&hellip;' : '' }}</p>
       </ion-item>
     </ion-list>
   </ion-content>
-</ion-content>
 </ion-view>

@@ -8,6 +8,7 @@ h1 {
   line-height: 26.4px;
   color: yellow;
 }
+
 h3 {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 14px;
@@ -16,6 +17,7 @@ h3 {
   font-weight: 500;
   line-height: 15.4px;
 }
+
 p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 14px;
@@ -100,3 +102,4 @@ p {
   margin-top: 20px;
   text-align: center;
 }
+
