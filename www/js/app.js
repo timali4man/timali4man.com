@@ -18,8 +18,7 @@ angular.module('starter', ['ionic'])
   });
 })
 
-
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
   $stateProvider
     .state('tabs', {
       url: '/tab',
@@ -90,35 +89,36 @@ angular.module('starter', ['ionic'])
               templateUrl: 'templates/lizzy.html'
             }
           }
-        })
+        });
 
   $urlRouterProvider.otherwise('/tab/home');
+
+  $ionicConfigProvider.tabs.position('bottom');
 })
 
-
 .controller('ListController', ['$scope', '$http', '$state', function($scope, $http, $state) {
+  $http.get('js/data.json').success(function(data) {
+    $scope.artists = data;
+    $scope.whichartist=$state.params.aId;
+
+    $scope.onItemDelete = function(item) {
+      $scope.artists.splice($scope.artists.indexOf(item), 1);
+    };
+
+    $scope.doRefresh =function() {
     $http.get('js/data.json').success(function(data) {
-      $scope.artists = data;
-      $scope.whichartist=$state.params.aId;
+        $scope.artists = data;
+        $scope.$broadcast('scroll.refreshComplete');
+      });
+    };
 
-      $scope.onItemDelete = function(item) {
-        $scope.artists.splice($scope.artists.indexOf(item), 1);
-      }
+    $scope.toggleStar = function(item) {
+      item.star = !item.star;
+    };
 
-      $scope.doRefresh =function() {
-      $http.get('js/data.json').success(function(data) {
-          $scope.artists = data;
-          $scope.$broadcast('scroll.refreshComplete');
-        });
-      }
-
-      $scope.toggleStar = function(item) {
-        item.star = !item.star;
-      }
-
-      $scope.moveItem = function(item, fromIndex, toIndex) {
-        $scope.artists.splice(fromIndex, 1);
-        $scope.artists.splice(toIndex, 0, item);
-      };
-    });
+    $scope.moveItem = function(item, fromIndex, toIndex) {
+      $scope.artists.splice(fromIndex, 1);
+      $scope.artists.splice(toIndex, 0, item);
+    };
+  });
 }]);

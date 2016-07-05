@@ -1,5 +1,4 @@
 <ion-view hide-nav-bar="true">
-
   <ion-content
     class="has-subheader">
     <ion-list>
@@ -9,10 +8,10 @@
         item-text-wrap" href="#/tab/list/{{ item.shortname }}">
         <img ng-src="http://placehold.it/80x80"
           alt="{{ item.name }} Photo">
-        <h2>{{item.name}}</h2>
+        <h3>{{item.name}}</h3>
         <p>{{item.reknown}}</p>
-        <p>{{item.bio | limitTo: 10000}}
-        {{ item.bio.length > 10000 ? '&hellip;' : '' }}</p>
+        <p>{{item.bio | limitTo: 15}}
+        {{ item.bio.length > 15 ? '&hellip;' : '' }}more</p>
       </ion-item>
     </ion-list>
   </ion-content>
