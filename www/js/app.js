@@ -103,3 +103,93 @@ angular.module('starter', ['ionic'])
 
   });
 }]);
+
+// .controller('GalleryCtrl', [function($scope, $ionicBackdrop, $ionicModal, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
+ 
+  // $scope.aliHistoryPics = [{
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_aristotle.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_modern_rome.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_panini.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_einstein.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_rome_gallery.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_wilde.jpg'
+  // }];
+ 
+  // $scope.aliLikesPics = [{
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_aristotle.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_modern_rome.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_panini.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_einstein.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_rome_gallery.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_wilde.jpg'
+  // }];
+
+  // $scope.timHistoryPics = [{
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_aristotle.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_modern_rome.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_panini.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_einstein.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_rome_gallery.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_wilde.jpg'
+  // }];
+ 
+  // $scope.timLikesPics = [{
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_aristotle.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_modern_rome.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_panini.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_einstein.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_rome_gallery.jpg'
+  // }, {
+  //   src: '../img/{{ item.shortname }}/{{ item.shortname }}_wilde.jpg'
+  // }];
+
+//   $scope.zoomMin = 1;
+
+//   $scope.showImages = function(index) {
+//   $scope.activeSlide = index;
+//   $scope.showModal('../templates/detail.html');
+//   };
+ 
+//   $scope.showModal = function(templateUrl) {
+//     $ionicModal.fromTemplateUrl(templateUrl, {
+//       scope: $scope
+//     }).then(function(modal) {
+//       $scope.modal = modal;
+//       $scope.modal.show();
+//     });
+//   };
+   
+//   $scope.closeModal = function() {
+//     $scope.modal.hide();
+//     $scope.modal.remove();
+//   };
+   
+//   $scope.updateSlideStatus = function(slide) {
+//     var zoomFactor = $ionicScrollDelegate.$getByHandle('scrollHandle' + slide).getScrollPosition().zoom;
+//     if (zoomFactor == $scope.zoomMin) {
+//       $ionicSlideBoxDelegate.enableSlide(true);
+//     } else {
+//       $ionicSlideBoxDelegate.enableSlide(false);
+//     }
+//   };
+  
+// }]);
