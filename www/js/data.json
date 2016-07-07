@@ -3,12 +3,16 @@
     "name":"Ali Forman",
     "shortname":"Ali_Forman",
     "reknown":"Profile: I am a full stack JavaScript web developer specializing in both front-end and back-end development. I enjoy learning new things and working outside my comfort zone. I can work both independently or with a team and am a highly motivated problem solver. As a developer, I would like to work with a high-functioning team to ensure stable code and deliver a high quality product.",
-    "bio":"Skills: JavaScript, jQuery, AngularJS, HTML, CSS, Sass, MongoDB, Git, Mocha, Chai, Gulp, Protractor, Karma, Webpack, Jasmine, REST API, NodeJS, ExpressJS"
+    "bio":"Skills: JavaScript, jQuery, AngularJS, HTML, CSS, Sass, MongoDB, Git, Mocha, Chai, Gulp, Protractor, Karma, Webpack, Jasmine, REST API, NodeJS, ExpressJS",
+    "history":"Lorem ipsum is latin, slightly jumbled, the remnants of a passage from Cicero's 'De finibus bonorum et malorum' 1.10.32, which begins 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' [There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.]. [de Finibus Bonorum et Malorum, written in 45 BC, is a treatise on the theory of ethics very popular in the Renaisance.]",
+    "likes":"I might have been Michael Caine. Sweet on lips and eyes are glowing. you peel, you strip, you bleed something delicious. High. We all believe. So make it shine. All the time you save. Shirt open to the waist. weakness and distress what am I?. Learned my grade the hard way. (Down down down) "A, B, C, D, you're in the belly of me". I'll make it hard on you. She made my skin glow. Is it getting high?. No need to show you this time"
   },
   {
     "name":"Tim Forman",
     "shortname":"Tim_Forman",
     "reknown":"Profile: I’m an experienced IT Support Technician with a 16-year history in the tech industry providing client-facing support. I possess several Microsoft certifications and a certificate in Advanced JavaScript Web Development. I'm self-supervising and self-motivated with the ability to work as part of a team or in a team leadership role.",
-    "bio":"Skills: Windows Operating Systems, Max OSX, Microsoft Active Directory, UNIX command line, HTML, CSS, JavaScript, AngularJS, jQuery, Sass, MongoDB, Git, Mocha, Chai, Gulp, Protractor, Karma, Webpack, Jasmine, REST API, NodeJS, ExpressJS"
+    "bio":"Skills: Windows Operating Systems, Max OSX, Microsoft Active Directory, UNIX command line, HTML, CSS, JavaScript, AngularJS, jQuery, Sass, MongoDB, Git, Mocha, Chai, Gulp, Protractor, Karma, Webpack, Jasmine, REST API, NodeJS, ExpressJS",
+    "history":"Lorem ipsum is latin, slightly jumbled, the remnants of a passage from Cicero's 'De finibus bonorum et malorum' 1.10.32, which begins 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' [There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.]. [de Finibus Bonorum et Malorum, written in 45 BC, is a treatise on the theory of ethics very popular in the Renaisance.]",
+    "likes":"I might have been Michael Caine. Sweet on lips and eyes are glowing. you peel, you strip, you bleed something delicious. High. We all believe. So make it shine. All the time you save. Shirt open to the waist. weakness and distress what am I?. Learned my grade the hard way. (Down down down) "A, B, C, D, you're in the belly of me". I'll make it hard on you. She made my skin glow. Is it getting high?. No need to show you this time"
   }
 ]
