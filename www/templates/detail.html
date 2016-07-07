@@ -21,11 +21,19 @@
       <div class="item">
         <h2>Background History</h2>
       </div>
-
       <div class="list card" ng-repeat="item in artists | filter: {
       shortname: whichartist }" class="item-text-wrap">
-        <div class="item item-body">
-          <img class="full-image" src="../img/{{ item.shortname}}_history.jpg">
+        <ion-content class="has-header padding"> ng-controller="MediaCtrl">
+          <div class="item item-divider">
+            <i class="ion-images"></i>
+          </div>
+          <a class="item item-list-detail">
+            <ion-scroll direction="x">
+              <img ng-repeat="image in allImages" ng-src="{{image.src}}" ng-click="showImages($index)" class="image-list-thumb"/>
+            </ion-scroll>
+          </a>
+        </ion-content>
+        <div>
           <p>{{item.history}}</p>
         </div>
       </div>
