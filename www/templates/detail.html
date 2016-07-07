@@ -23,13 +23,13 @@
       </div>
       <div class="list card" ng-repeat="item in artists | filter: {
       shortname: whichartist }" class="item-text-wrap">
-        <ion-content class="has-header padding"> ng-controller="MediaCtrl">
+        <ion-content class="has-header padding" ng-controller="MediaCtrl">
           <div class="item item-divider">
             <i class="ion-images"></i>
           </div>
           <a class="item item-list-detail">
             <ion-scroll direction="x">
-              <img ng-repeat="image in allImages" ng-src="{{image.src}}" ng-click="showImages($index)" class="image-list-thumb"/>
+              <img ng-src="{{item.historypics.url}}" ng-click="showImages($index)" class="image-list-thumb"/>
             </ion-scroll>
           </a>
         </ion-content>
