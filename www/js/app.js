@@ -102,4 +102,57 @@ angular.module('starter', ['ionic'])
     $scope.whichartist=$state.params.aId;
 
   });
-}]);
+}])
+
+.controller('USgalleryCtrl', function($scope, $ionicBackdrop, $ionicModal, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
+
+  $scope.usImages = [{
+    src: 'img/us_pics/CraterLake.jpg'
+  }, {
+    src: 'img/us_pics/LakeTahoe1.jpg'
+  }, {
+    src: 'img/us_pics/JRT21.jpg'
+  }, {
+    src: 'img/us_pics/JRT6.jpg'
+  }, {
+    src: 'img/us_pics/JRT10.jpg'
+  }, {
+    src: 'img/us_pics/HurricaneRidge.jpg'
+  }, {
+    src: 'img/us_pics/MtRainier.jpg'
+  }, {
+    src: 'img/us_pics/SanFran.jpg'
+  }, {
+    src: 'img/us_pics/Ystone.jpg'
+  }];
+
+  $scope.zoomMin = 1;
+
+  $scope.showImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/us-gallery-zoomview.html');
+  };
+
+  $scope.showModal = function(templateUrl) {
+    $ionicModal.fromTemplateUrl(templateUrl, {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.modal = modal;
+      $scope.modal.show();
+    });
+  }
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+    $scope.modal.remove()
+  };
+
+  $scope.updateSlideStatus = function(slide) {
+    var zoomFactor = $ionicScrollDelegate.$getByHandle('scrollHandle' + slide).getScrollPosition().zoom;
+    if (zoomFactor == $scope.zoomMin) {
+      $ionicSlideBoxDelegate.enableSlide(true);
+    } else {
+      $ionicSlideBoxDelegate.enableSlide(false);
+    }
+  };
+});
