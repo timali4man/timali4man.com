@@ -129,13 +129,13 @@ angular.module('starter', ['ionic'])
   $scope.piImages = [{
     src: 'img/pi_pics/GarciasCoffee.jpg'
   }, {
-    src: 'img/pi_pics/Carabao.jpg'
+    src: 'img/pi_pics/Carabao1.jpg'
   }, {
     src: 'img/pi_pics/ourHouse.jpg'
   }, {
     src: 'img/pi_pics/Puerto1.jpg'
   }, {
-    src: 'img/pi_pics/Tagbilaran.jpg'
+    src: 'img/pi_pics/Tagbilaran1.jpg'
   }, {
     src: 'img/pi_pics/Batad9.jpg'
   }, {
