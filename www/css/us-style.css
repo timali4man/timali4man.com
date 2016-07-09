@@ -31,6 +31,6 @@
   background-color: #687CC0
 }
 
-#main-us-image {
+#main-us-image, #main-pi-image, #main-travels-image {
   height: 400px;
 }

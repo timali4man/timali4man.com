@@ -27,26 +27,6 @@ p {
   line-height: 20px;
 }
 
-.timlink {
-  width: 45%;
-  height: 600px;
-  position: absolute;
-  left: 1%;
-  margin-top: 20%;
-  display: block;
-  z-index: 2;
-}
-
-.alilink {
-  width: 45%;
-  height: 600px;
-  position: absolute;
-  right: 1%;
-  margin-top: 60%;
-  display: block;
-  z-index: 2;
-}
-
 .full-image {
   width: 70%;
 }
@@ -80,19 +60,11 @@ p {
 }
 
 .philippinespic {
-  background: url(../img/boracay.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #687CC0;
 }
 
 .travelspic {
-  background: url(../img/hong-kong.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #687CC0;
 }
 
 .lizzypic {
