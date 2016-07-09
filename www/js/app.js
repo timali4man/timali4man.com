@@ -190,6 +190,20 @@ angular.module('starter', ['ionic'])
     src: 'img/travels_pics/VirgCity.jpg'
   }];
 
+  $scope.lizzyImages = [{
+    src: 'img/lizzy_pics/Lizzy2014.jpg'
+  }, {
+    src: 'img/lizzy_pics/12.jpg'
+  }, {
+    src: 'img/lizzy_pics/chillin.jpg'
+  }, {
+    src: 'img/lizzy_pics/Lizzy1.jpg'
+  }, {
+    src: 'img/lizzy_pics/onDstep.jpg'
+  }, {
+    src: 'img/lizzy_pics/Conehead.jpg'
+  }];
+
   $scope.zoomMin = 1;
 
   $scope.showUsImages = function(index) {
@@ -205,6 +219,11 @@ angular.module('starter', ['ionic'])
   $scope.showTravelsImages = function(index) {
   $scope.activeSlide = index;
   $scope.showModal('templates/travels-gallery-zoomview.html');
+  };
+
+  $scope.showLizzyImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/lizzy-gallery-zoomview.html');
   };
 
 
