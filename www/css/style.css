@@ -68,11 +68,7 @@ p {
 }
 
 .lizzypic {
-  background: url(../img/lizzy/Lizzy3.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #687CC0;
 }
 
 .timali .us .philippines .travels .lizzy {
