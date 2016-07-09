@@ -104,7 +104,7 @@ angular.module('starter', ['ionic'])
   });
 }])
 
-.controller('USgalleryCtrl', function($scope, $ionicBackdrop, $ionicModal, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
+.controller('GalleryCtrl', function($scope, $ionicBackdrop, $ionicModal, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
 
   $scope.usImages = [{
     src: 'img/us_pics/CraterLake.jpg'
