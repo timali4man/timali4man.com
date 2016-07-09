@@ -126,12 +126,87 @@ angular.module('starter', ['ionic'])
     src: 'img/us_pics/Ystone.jpg'
   }];
 
+  $scope.piImages = [{
+    src: 'img/pi_pics/GarciasCoffee.jpg'
+  }, {
+    src: 'img/pi_pics/Carabao.jpg'
+  }, {
+    src: 'img/pi_pics/ourHouse.jpg'
+  }, {
+    src: 'img/pi_pics/Puerto1.jpg'
+  }, {
+    src: 'img/pi_pics/Tagbilaran.jpg'
+  }, {
+    src: 'img/pi_pics/Batad9.jpg'
+  }, {
+    src: 'img/pi_pics/Manila.jpg'
+  }, {
+    src: 'img/pi_pics/Boracay05b.jpg'
+  }, {
+    src: 'img/pi_pics/Boracay05k.jpg'
+  }, {
+    src: 'img/pi_pics/Boracay05s.jpg'
+  }, {
+    src: 'img/pi_pics/Baguio8.jpg'
+  }];
+
+  $scope.travelsImages = [{
+    src: 'img/travels_pics/HongKong31.jpg'
+  }, {
+    src: 'img/travels_pics/Macau14.jpg'
+  }, {
+    src: 'img/travels_pics/Macau37.jpg'
+  }, {
+    src: 'img/travels_pics/Macau52.jpg'
+  }, {
+    src: 'img/travels_pics/Macau34.jpg'
+  }, {
+    src: 'img/travels_pics/Macau32.jpg'
+  }, {
+    src: 'img/travels_pics/Zhuhai17.jpg'
+  }, {
+    src: 'img/travels_pics/Zhuhai22.jpg'
+  }, {
+    src: 'img/travels_pics/Disneyland34.jpg'
+  }, {
+    src: 'img/travels_pics/Bison5.jpg'
+  }, {
+    src: 'img/travels_pics/GrandCanyon49.jpg'
+  }, {
+    src: 'img/travels_pics/LasVegas46.jpg'
+  }, {
+    src: 'img/travels_pics/OldFaithful5.jpg'
+  }, {
+    src: 'img/travels_pics/Vancouver1.jpg'
+  }, {
+    src: 'img/travels_pics/SantaMonica3.jpg'
+  }, {
+    src: 'img/travels_pics/Vancouver6.jpg'
+  }, {
+    src: 'img/travels_pics/Seattle2.jpg'
+  }, {
+    src: 'img/travels_pics/GrandCanyon16.jpg'
+  }, {
+    src: 'img/travels_pics/VirgCity.jpg'
+  }];
+
   $scope.zoomMin = 1;
 
-  $scope.showImages = function(index) {
+  $scope.showUsImages = function(index) {
   $scope.activeSlide = index;
   $scope.showModal('templates/us-gallery-zoomview.html');
   };
+
+  $scope.showPiImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/pi-gallery-zoomview.html');
+  };
+
+  $scope.showTravelsImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/travels-gallery-zoomview.html');
+  };
+
 
   $scope.showModal = function(templateUrl) {
     $ionicModal.fromTemplateUrl(templateUrl, {
@@ -140,11 +215,11 @@ angular.module('starter', ['ionic'])
       $scope.modal = modal;
       $scope.modal.show();
     });
-  }
+  };
 
   $scope.closeModal = function() {
     $scope.modal.hide();
-    $scope.modal.remove()
+    $scope.modal.remove();
   };
 
   $scope.updateSlideStatus = function(slide) {
