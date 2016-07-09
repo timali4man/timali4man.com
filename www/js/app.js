@@ -191,15 +191,19 @@ angular.module('starter', ['ionic'])
   }];
 
   $scope.lizzyImages = [{
+  src: 'img/lizzy_pics/Lizzy1.jpg'
+  }, {
     src: 'img/lizzy_pics/Lizzy2014.jpg'
+  }, {
+  src: 'img/lizzy_pics/chillin.jpg'
   }, {
     src: 'img/lizzy_pics/12.jpg'
   }, {
-    src: 'img/lizzy_pics/chillin.jpg'
-  }, {
-    src: 'img/lizzy_pics/Lizzy1.jpg'
-  }, {
     src: 'img/lizzy_pics/onDstep.jpg'
+  }, {
+    src: 'img/lizzy_pics/lizzy_head_rest.jpg'
+  }, {
+    src: 'img/lizzy_pics/lizzy_balcony_4.jpg'
   }, {
     src: 'img/lizzy_pics/Conehead.jpg'
   }];
