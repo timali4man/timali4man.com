@@ -216,6 +216,15 @@ p {
   .main-images {
       text-align: center;
     }
+
+  .timalipic {
+  background: url(../img/23crop.jpg) no-repeat center center fixed;
+  background-color: #6D93C3;
+  -webkit-background-size: 850px auto;
+  -moz-background-size: 850px auto;
+  -o-background-size: 850px auto;
+  background-size: 850px auto;
+}
 }
 
 /***MEDIA QUERIES**/
@@ -257,4 +266,13 @@ p {
       height: 600px;
       margin-bottom: 10px;
   }
+
+  .timalipic {
+  background: url(../img/23crop.jpg) no-repeat center center fixed;
+  background-color: #6D93C3;
+  -webkit-background-size: 850px auto;
+  -moz-background-size: 850px auto;
+  -o-background-size: 850px auto;
+  background-size: 850px auto;
+}
 }
