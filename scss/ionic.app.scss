@@ -44,27 +44,27 @@ p {
 }
 
 .has-tabs-top {
-    top: 54px !important;
+  top: 54px !important;
 }
 
 .image {
-    width: 100%;
-    height: 600px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center, center;
+  width: 100%;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center, center;
 }
 
 .image-list-thumb {
-    padding: 2px 2px 2px 2px;
-    height: 100px;
+  padding: 2px 2px 2px 2px;
+  height: 100px;
 }
 
 .image-modal {
-    width: 100% !important;
-    height: 100%;
-    top: 0 !important;
-    left: 0 !important;
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
 }
 
 .item {
@@ -79,34 +79,37 @@ p {
   background-color: #1087A2;
 }
 
+.lizzy-image {
+  margin-left: 20%;  
+}
+
 .lizzy .timali .us .philippines .travels {
   width: 50%;
-  max-width: 200px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
 }
 
-#main-us-image, #main-pi-image, #main-travels-image, #main-lizzy-image {
+#main-us-image, #main-pi-image, #main-travels-image, .main-lizzy-image {
   height: 400px;
 }
 
-  .main-images {
-      text-align: center;
-      margin-bottom: 5px;
-  }
+.main-images {
+  text-align: center;
+  margin-bottom: 5px;
+}
 
 .philippinespic {
   background-color: #0078FD;
 }
 
 .slider {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .tabs-top > .tabs, .tabs.tabs-top {
-    top: 0 !important;
+  top: 0 !important;
 }
 
 .tagline {
@@ -135,6 +138,9 @@ p {
 
 .us-frame, .pi-frame, .travels-frame, .lizzy-frame, .item-list-detail {
   background-color: rgba(254, 255, 254, 0.3);
+  p {
+      padding: 5px;
+  }
 }
 
 .uspic {
@@ -150,7 +156,7 @@ p {
     font-variant: normal;
     font-weight: 500;
     line-height: 26.4px;
-    }
+  }
 
   h4 {
     font-size: 1.3em;
@@ -165,12 +171,74 @@ p {
   }
 
   .main-images {
-      text-align: center;
+    text-align: center;
+  }
+
+  .tagline {
+    margin-left: 5%;
+    width: 90%;
+    height: 35px;
+  }
+  .timalipic {
+    background: url(../img/23crop.jpg) no-repeat center center fixed;
+    background-color: #6D93C3;
+    -webkit-background-size: 600px auto;
+    -moz-background-size: 600px auto;
+    -o-background-size: 600px auto;
+    background-size: 600px auto;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 980px or less */
+@media screen and (min-width: 700px) {
+
+  h1 {
+    font-size: 3.5em;
+    padding-top: 15px;
+  }
+
+  .item-list-detail {
+    margin-top: 10px;
+  }
+
+  .lizzy-image {
+    margin-left: 22%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .lizzy-frame {
+    margin-top: 10px;
+    h4 {
+      padding: 5px;
     }
+    p {
+      padding: 5px;
+    }
+  }
+
+  .main-lizzy-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-images {
+    text-align: center;
+  }
+
+  .timalipic {
+    background: url(../img/23crop.jpg) no-repeat center center fixed;
+    background-color: #6D93C3;
+    -webkit-background-size: 850px auto;
+    -moz-background-size: 850px auto;
+    -o-background-size: 850px auto;
+    background-size: 850px auto;
+  }
 
   .tagline {
     width: 100%;
-    height: 35px;
+    height: 55px;
   }
 }
 
@@ -185,7 +253,7 @@ p {
     font-weight: 500;
     line-height: 26.4px;
     padding: 15px;
-    }
+  }
 
   h4 {
     font-size: 1.5em;
@@ -199,44 +267,87 @@ p {
     line-height: 20px;
   }
 
-  .main-images {
-      text-align: center;
+  .item-list-detail {
+    margin-top: 10px;
+  }
+
+  .lizzy-image {
+    margin-left: 22%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .lizzy-frame {
+    margin-top: 10px;
+    h4 {
+      padding: 5px;
     }
+    p {
+      padding: 5px;
+    }
+  }
+
+  .main-lizzy-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-images {
+    text-align: center;
+  }
 
   .tagline {
-    width: 100%;
+    margin-left: 20%;
+    width: 60%;
     height: 60px;
+  }
+
+  .timalipic {
+    background: url(../img/23crop.jpg) no-repeat center center fixed;
+    background-color: #6D93C3;
+    -webkit-background-size: 650px auto;
+    -moz-background-size: 650px auto;
+    -o-background-size: 650px auto;
+    background-size: 650px auto;
   }
 }
 
 /***MEDIA QUERIES**/
-/* for 980px or less */
-@media screen and (min-width: 700px) {
+/* for 770px */
+@media screen and (min-width: 769px) {
+  
+   .lizzy-image {
+    margin-left: 22%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 
-  .main-images {
-      text-align: center;
+  .lizzy-frame {
+    margin-top: 10px;
+    h4 {
+      padding: 5px;
     }
+    p {
+      padding: 5px;
+    }
+  }
 
-  .timalipic {
-  background: url(../img/23crop.jpg) no-repeat center center fixed;
-  background-color: #6D93C3;
-  -webkit-background-size: 850px auto;
-  -moz-background-size: 850px auto;
-  -o-background-size: 850px auto;
-  background-size: 850px auto;
-}
+  .main-lizzy-image {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /***MEDIA QUERIES**/
-/* for 980px or less */
-@media screen and (min-width: 1024px) {
+/* for 1025x or less */
+@media screen and (min-width: 1025px) {
 
-  #main-us-image, #main-pi-image, #main-travels-image, #main-lizzy-image {
+  #main-us-image, #main-pi-image, #main-travels-image {
     height: 100%;
   }
 
     h1, h4, p {
-    font-size: 4.5em;
+    font-size: 4em;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -256,23 +367,52 @@ p {
     line-height: 20px;
   }
 
+  .item-list-detail {
+    margin-top: 10px;
+  }
+
+  .main-lizzy-image {
+    padding: 0;
+    margin-top: 70px;
+  }
+
+  .lizzy-image {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .lizzy-frame {
+    width: 60%;
+    margin-right: 0;
+    display: inline-block;
+    h4 {
+      padding: 5px;
+    }
+    p {
+      padding: 5px;
+    }
+  }
+
   .tagline {
-    width: 100%;
+    margin-left: 28%;
+    width: 44%;
     height: 80px;
   }
 
   .main-images {
-      text-align: center;
-      height: 600px;
-      margin-bottom: 10px;
+    text-align: center;
+    height: 600px;
+    margin-bottom: 10px;
   }
 
   .timalipic {
-  background: url(../img/23crop.jpg) no-repeat center center fixed;
-  background-color: #6D93C3;
-  -webkit-background-size: 850px auto;
-  -moz-background-size: 850px auto;
-  -o-background-size: 850px auto;
-  background-size: 850px auto;
-}
+    background: url(../img/23crop.jpg) no-repeat center center fixed;
+    background-color: #6D93C3;
+    -webkit-background-size: 850px auto;
+    -moz-background-size: 850px auto;
+    -o-background-size: 850px auto;
+    background-size: 850px auto;
+  }
 }
