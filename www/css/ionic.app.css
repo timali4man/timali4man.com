@@ -9872,15 +9872,21 @@ p {
   margin-top: 20px;
   text-align: center; }
 
-#main-us-image, #main-pi-image, #main-travels-image, .main-lizzy-image {
-  height: 400px; }
+#main-us-image, #main-pi-image, #main-travels-image {
+  height: 100%; }
 
 .main-images {
   text-align: center;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-right: 5px;
+  height: 400px; }
 
 .philippinespic {
   background-color: #0078FD; }
+
+.pi-frame {
+  max-width: 1350px;
+  margin: auto; }
 
 .slider {
   width: 100%;
@@ -9906,8 +9912,16 @@ p {
 .transparent {
   background: rgba(0, 0, 0, 0.7); }
 
+.travels-frame {
+  max-width: 1350px;
+  margin: auto; }
+
 .travelspic {
   background-color: #046BEB; }
+
+.us-frame {
+  max-width: 1390px;
+  margin: auto; }
 
 .us-frame, .pi-frame, .travels-frame, .lizzy-frame, .item-list-detail {
   background-color: rgba(254, 255, 254, 0.3); }
@@ -9917,7 +9931,7 @@ p {
 .uspic {
   background-color: #5170BE; }
 
-/* for 600px or less */
+/* for 500px to 980px landscape */
 @media screen and (min-width: 500px) and (orientation: landscape) {
   h1, h4, p {
     font-size: 2.5em;
@@ -9948,7 +9962,7 @@ p {
     background-size: 600px auto; } }
 
 /***MEDIA QUERIES**/
-/* for 980px or less */
+/* for 700px or more portrait */
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.5em;
@@ -9973,16 +9987,17 @@ p {
   .timalipic {
     background: url(../img/23crop.jpg) no-repeat center center fixed;
     background-color: #6D93C3;
-    -webkit-background-size: 850px auto;
-    -moz-background-size: 850px auto;
-    -o-background-size: 850px auto;
-    background-size: 850px auto; }
+    -webkit-background-size: 650px auto;
+    -moz-background-size: 650px auto;
+    -o-background-size: 650px auto;
+    background-size: 650px auto; }
   .tagline {
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
     height: 55px; } }
 
 /***MEDIA QUERIES**/
-/* for 980px or less */
+/* for 700px or more landscape */
 @media screen and (min-width: 700px) and (orientation: landscape) {
   h1, h4, p {
     font-size: 3em;
@@ -10029,7 +10044,7 @@ p {
     background-size: 650px auto; } }
 
 /***MEDIA QUERIES**/
-/* for 770px */
+/* for 770px and up portrait */
 @media screen and (min-width: 769px) {
   .lizzy-image {
     margin-left: 22%;
@@ -10046,12 +10061,12 @@ p {
     padding: 0; } }
 
 /***MEDIA QUERIES**/
-/* for 1025x or less */
+/* for 1025x and up */
 @media screen and (min-width: 1025px) {
   #main-us-image, #main-pi-image, #main-travels-image {
     height: 100%; }
   h1, h4, p {
-    font-size: 4em;
+    font-size: 3.5em;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -10084,8 +10099,8 @@ p {
     .lizzy-frame p {
       padding: 5px; }
   .tagline {
-    margin-left: 28%;
-    width: 44%;
+    max-width: 700px;
+    margin: auto;
     height: 80px; }
   .main-images {
     text-align: center;
@@ -10094,7 +10109,14 @@ p {
   .timalipic {
     background: url(../img/23crop.jpg) no-repeat center center fixed;
     background-color: #6D93C3;
-    -webkit-background-size: 850px auto;
-    -moz-background-size: 850px auto;
-    -o-background-size: 850px auto;
-    background-size: 850px auto; } }
+    -webkit-background-size: 750px auto;
+    -moz-background-size: 750px auto;
+    -o-background-size: 750px auto;
+    background-size: 750px auto; } }
+
+/***MEDIA QUERIES**/
+/* for 1500px and up */
+@media screen and (min-width: 1500px) {
+  .tagline {
+    max-width: 700px;
+    margin: auto; } }

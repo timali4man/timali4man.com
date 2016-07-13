@@ -199,8 +199,6 @@ angular.module('starter', ['ionic'])
   }, {
     src: 'img/lizzy_pics/12.jpg'
   }, {
-    src: 'img/lizzy_pics/onDstep.jpg'
-  }, {
     src: 'img/lizzy_pics/lizzy_head_rest.jpg'
   }, {
     src: 'img/lizzy_pics/lizzy_balcony_4.jpg'
