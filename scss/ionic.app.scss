@@ -21,7 +21,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-h1, h4, p {
+h1, h3, h4, p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2.25em;
   font-style: normal;
@@ -31,7 +31,7 @@ h1, h4, p {
   padding: 5px;
 }
 
-h4 {
+h3, h4 {
   font-size: 1.3em;
   font-weight: 700;
   line-height: 15.4px;
@@ -43,8 +43,8 @@ p {
   line-height: 20px;
 }
 
-.has-tabs-top {
-  top: 54px !important;
+.portfolio {
+  background-color: #387EF5;
 }
 
 .image {
@@ -67,20 +67,88 @@ p {
   left: 0 !important;
 }
 
-.item {
+.item-list-detail {
   text-align: center;
+  background-color: rgba(254, 255, 254, 0.3);
 }
 
-.item > p {
+.item-complex .item-content,
+.item-radio .item-content {
+  background-color: #99ACC2;
+}
+
+.card .item:first-child,
+.list-inset .item:first-child, .card .item:last-child,
+.list-inset .item:last-child, 
+.padding > .list .item:first-child {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.detail {
+  background-color: #387EF5;
+}
+
+.item-text-wrap {
   text-align: left;
+  max-width: 1000px;
+  margin: 20px 10px;
+  img {
+    margin-left: 10%;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+  h3 {
+    background-color: #6D94C2;
+    font-size: 1.1em;
+    text-align: center;
+    margin-right: 0;
+    padding: 5px;
+  }
+  p {
+    font-size: 1em;
+    text-align: left;
+    padding: 5px 0;
+  }
+}
+
+.full-image {
+  width: 200px;
+  margin-left: 6%;
+}
+
+.list {
+  text-align: left;
+  max-width: 1000px;
+  background-color: #6D94C2;
+  img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  h1, h2 {
+    background-color: #6D94C2;
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+    color: black;
+  }
+  p {
+    font-size: 1em;
+    text-align: left;
+    padding: 5px 0;
+    color: black;
+  }
+}
+
+.lizzy-frame {
+  max-width: 1350px;
+  margin: auto;
 }
 
 .lizzypic {
-  background-color: #1087A2;
-}
-
-.lizzy-image {
-  margin-left: 20%;
+  background-color: #0088D5;
 }
 
 .lizzy .timali .us .philippines .travels {
@@ -90,7 +158,7 @@ p {
   text-align: center;
 }
 
-#main-us-image, #main-pi-image, #main-travels-image {
+#main-us-image, #main-pi-image, #main-travels-image, #main-lizzy-image {
   height: 100%;
 }
 
@@ -153,9 +221,9 @@ p {
   margin: auto;
 }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .item-list-detail {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
   background-color: rgba(254, 255, 254, 0.3);
-  p {
+  h3, h4, p {
       padding: 5px;
   }
 }
@@ -167,7 +235,7 @@ p {
 /* for 500px to 980px landscape */
 @media screen and (min-width: 500px) and (orientation: landscape) {
 
-  h1, h4, p {
+  h1, h3, h4, p {
     font-size: 2.5em;
     font-style: normal;
     font-variant: normal;
@@ -175,7 +243,7 @@ p {
     line-height: 26.4px;
   }
 
-  h4 {
+  h3, h4 {
     font-size: 1.3em;
     font-weight: 700;
     line-height: 15.4px;
@@ -219,27 +287,6 @@ p {
     margin-top: 10px;
   }
 
-  .lizzy-image {
-    margin-left: 22%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .lizzy-frame {
-    margin-top: 10px;
-    h4 {
-      padding: 5px;
-    }
-    p {
-      padding: 5px;
-    }
-  }
-
-  .main-lizzy-image {
-    margin: 0;
-    padding: 0;
-  }
-
   .main-images {
     text-align: center;
   }
@@ -264,7 +311,7 @@ p {
 /* for 700px or more landscape */
 @media screen and (min-width: 700px) and (orientation: landscape) {
 
-  h1, h4, p {
+  h1, h3, h4, p {
     font-size: 3em;
     font-style: normal;
     font-variant: normal;
@@ -273,7 +320,7 @@ p {
     padding: 15px;
   }
 
-  h4 {
+  h3, h4 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 15.4px;
@@ -283,31 +330,6 @@ p {
     font-size: 1.35em;
     font-weight: 400;
     line-height: 20px;
-  }
-
-  .item-list-detail {
-    margin-top: 10px;
-  }
-
-  .lizzy-image {
-    margin-left: 22%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .lizzy-frame {
-    margin-top: 10px;
-    h4 {
-      padding: 5px;
-    }
-    p {
-      padding: 5px;
-    }
-  }
-
-  .main-lizzy-image {
-    margin: 0;
-    padding: 0;
   }
 
   .main-images {
@@ -331,40 +353,14 @@ p {
 }
 
 /***MEDIA QUERIES**/
-/* for 770px and up portrait */
-@media screen and (min-width: 769px) {
-
-   .lizzy-image {
-    margin-left: 22%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .lizzy-frame {
-    margin-top: 10px;
-    h4 {
-      padding: 5px;
-    }
-    p {
-      padding: 5px;
-    }
-  }
-
-  .main-lizzy-image {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/***MEDIA QUERIES**/
 /* for 1025x and up */
 @media screen and (min-width: 1025px) {
 
-  #main-us-image, #main-pi-image, #main-travels-image {
+  #main-us-image, #main-pi-image, #main-travels-image, #main-lizzy-image {
     height: 100%;
   }
 
-    h1, h4, p {
+  h1, h3, h4, p {
     font-size: 3.5em;
     font-style: normal;
     font-variant: normal;
@@ -373,7 +369,7 @@ p {
     padding: 28px;
   }
 
-  h4 {
+  h3, h4 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 15.4px;
@@ -387,30 +383,6 @@ p {
 
   .item-list-detail {
     margin-top: 10px;
-  }
-
-  .main-lizzy-image {
-    padding: 0;
-    margin-top: 70px;
-  }
-
-  .lizzy-image {
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    float: left;
-  }
-
-  .lizzy-frame {
-    width: 60%;
-    margin-right: 0;
-    display: inline-block;
-    h4 {
-      padding: 5px;
-    }
-    p {
-      padding: 5px;
-    }
   }
 
   .tagline {

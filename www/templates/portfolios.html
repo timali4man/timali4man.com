@@ -1,10 +1,9 @@
 <ion-view hide-nav-bar="true">
-  <ion-content class="has-subheader">
+  <ion-content class="portfolio">
     <ion-list>
       <ion-item
-      ng-repeat='item in artists'
-      class="item-thumbnail-left
-        item-text-wrap" href="#/tab/list/{{ item.shortname }}">
+      ng-repeat="item in artists"
+      class="item item-text-wrap" href="#/tab/list/{{ item.shortname }}">
         <img class="full-image" src= "../img/{{ item.shortname }}_pic.jpg">
         <h3>{{item.name}}</h3>
         <p>{{item.reknown}}</p>
