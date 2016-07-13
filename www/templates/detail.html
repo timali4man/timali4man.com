@@ -1,5 +1,5 @@
 <ion-view>
-  <ion-content>
+  <ion-content class="detail">
 
     <div class="list card" ng-repeat="item in artists | filter: {
       shortname: whichartist }" class="item-thumbnail
@@ -24,7 +24,7 @@
         <h2>Background History</h2>
       </div>
 
-      <div class="list card" ng-repeat="item in artists | filter: {
+      <div class="item item-body" ng-repeat="item in artists | filter: {
       shortname: whichartist }" class="item-text-wrap">
         <div class="item item-body">
           <img class="full-image" src="../img/{{ item.shortname}}_history.jpg">
@@ -38,7 +38,7 @@
         <h2>Likes</h2>
       </div>
 
-      <div class="list card" ng-repeat="item in artists | filter: {
+      <div class="item item-body" ng-repeat="item in artists | filter: {
       shortname: whichartist }" class="item-text-wrap">
         <div class="item item-body">
           <img class="full-image" src="../img/{{ item.shortname}}_Likes.jpg">
