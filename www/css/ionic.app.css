@@ -9815,6 +9815,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+#preload {
+  display: none; }
+
 h1, h3, h4, p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2.25em;
@@ -10074,6 +10077,13 @@ p {
     background-size: 650px auto; } }
 
 /***MEDIA QUERIES**/
+/* for 945px and up */
+@media screen and (min-width: 945px) {
+  .philippines, .us, .travels, .lizzy {
+    max-width: 1350px;
+    margin: auto; } }
+
+/***MEDIA QUERIES**/
 /* for 1025x and up */
 @media screen and (min-width: 1025px) {
   #main-us-image, #main-pi-image, #main-travels-image, #main-lizzy-image {
@@ -10122,37 +10132,15 @@ p {
     margin-left: 13%; } }
 
 /***MEDIA QUERIES**/
-/* for 1364px and up */
-@media screen and (min-width: 1364px) {
-  .philippines {
-    width: 90%; }
-  .philippines, .us, .travels, .lizzy {
-    width: 96%;
-    margin: auto; } }
-
-/***MEDIA QUERIES**/
 /* for 1500px and up */
 @media screen and (min-width: 1500px) {
   .item-text-wrap img {
     margin-left: 41%; }
   .list {
-    margin-left: 20%; }
-  .philippines, .us, .travels, .lizzy {
-    width: 92%;
-    margin: auto; } }
-
-/***MEDIA QUERIES**/
-/* for 1660px and up */
-@media screen and (min-width: 1600px) {
-  .philippines, .us, .travels, .lizzy {
-    width: 85%;
-    margin: auto; } }
+    margin-left: 20%; } }
 
 /***MEDIA QUERIES**/
 /* for 1800px and up */
 @media screen and (min-width: 1800px) {
   .list {
-    margin-left: 25%; }
-  .philippines, .us, .travels, .lizzy {
-    width: 74%;
-    margin: auto; } }
+    margin-left: 25%; } }

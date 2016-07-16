@@ -21,6 +21,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+#preload {
+  display: none;
+}
+
 h1, h3, h4, p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2.25em;
@@ -79,7 +83,7 @@ p {
 
 .card .item:first-child,
 .list-inset .item:first-child, .card .item:last-child,
-.list-inset .item:last-child, 
+.list-inset .item:last-child,
 .padding > .list .item:first-child {
   background-color: rgba(211, 211, 211, 0.3);
 }
@@ -362,6 +366,15 @@ p {
 }
 
 /***MEDIA QUERIES**/
+/* for 945px and up */
+@media screen and (min-width: 945px) {
+  .philippines, .us, .travels, .lizzy {
+    max-width: 1350px;
+    margin: auto;
+  }
+}
+
+/***MEDIA QUERIES**/
 /* for 1025x and up */
 @media screen and (min-width: 1025px) {
 
@@ -422,30 +435,16 @@ p {
   }
 }
 
-
 /***MEDIA QUERIES**/
 /* for 1300px and up */
 @media screen and (min-width: 1300px) {
-  
+
   .full-image {
     margin-left: 40%;
   }
 
   .list {
     margin-left: 13%;
-  }
-}
-
-/***MEDIA QUERIES**/
-/* for 1364px and up */
-@media screen and (min-width: 1364px) {
-  .philippines {
-    width: 90%;
-  }
-
-  .philippines, .us, .travels, .lizzy {
-    width: 96%;
-    margin: auto;
   }
 }
 
@@ -462,20 +461,6 @@ p {
   .list {
     margin-left: 20%;
   }
-
-  .philippines, .us, .travels, .lizzy {
-    width: 92%;
-    margin: auto;
-  }
-}
-
-/***MEDIA QUERIES**/
-/* for 1660px and up */
-@media screen and (min-width: 1600px) {
-  .philippines, .us, .travels, .lizzy {
-    width: 85%;
-    margin: auto;
-  }
 }
 
 /***MEDIA QUERIES**/
@@ -483,11 +468,6 @@ p {
 @media screen and (min-width: 1800px) {
   .list {
     margin-left: 25%;
-  }
-
-  .philippines, .us, .travels, .lizzy {
-    width: 74%;
-    margin: auto;
   }
 }
 
