@@ -9,7 +9,9 @@
       </div>
 
       <div class="item item-body">
-        <img class="full-image" src= "../img/{{ item.shortname }}_pic.jpg">
+        <div class="detail-images">
+          <img class="full-image" src= "../img/{{ item.shortname }}_pic.jpg">
+        </div>
         <p>{{item.reknown}}</p>
         <p>{{item.bio | limitTo: 10000}}
           {{ item.bio.length > 10000 ? '&hellip;' : '' }}
