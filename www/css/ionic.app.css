@@ -9876,7 +9876,7 @@ p {
   max-width: 1000px;
   margin: 20px 10px; }
   .item-text-wrap img {
-    margin-left: 10%;
+    margin-left: 25%;
     width: 200px;
     height: auto;
     text-align: center;
@@ -9894,7 +9894,7 @@ p {
 
 .full-image {
   width: 200px;
-  margin-left: 6%; }
+  margin-left: 25%; }
 
 .list {
   text-align: left;
@@ -10007,8 +10007,7 @@ p {
   .main-images {
     text-align: center; }
   .tagline {
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
     height: 35px; }
   .timalipic {
     background: url(../img/23crop.jpg) no-repeat center center fixed;
@@ -10016,13 +10015,15 @@ p {
     -webkit-background-size: 600px auto;
     -moz-background-size: 600px auto;
     -o-background-size: 600px auto;
-    background-size: 600px auto; } }
+    background-size: 600px auto; }
+  .item-text-wrap img {
+    margin-left: 85%; } }
 
 /***MEDIA QUERIES**/
 /* for 700px or more portrait */
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     padding-top: 15px; }
   .item-list-detail {
     margin-top: 10px; }
@@ -10036,9 +10037,10 @@ p {
     -o-background-size: 650px auto;
     background-size: 650px auto; }
   .tagline {
-    width: 70%;
-    margin-left: 15%;
-    height: 55px; } }
+    width: 100%;
+    height: 55px; }
+  .item-text-wrap img {
+    margin-left: 37%; } }
 
 /***MEDIA QUERIES**/
 /* for 700px or more landscape */
@@ -10061,8 +10063,7 @@ p {
   .main-images {
     text-align: center; }
   .tagline {
-    margin-left: 20%;
-    width: 60%;
+    width: 100%;
     height: 60px; }
   .timalipic {
     background: url(../img/23crop.jpg) no-repeat center center fixed;
@@ -10095,8 +10096,6 @@ p {
   .item-list-detail {
     margin-top: 10px; }
   .tagline {
-    max-width: 700px;
-    margin: auto;
     height: 80px; }
   .main-images {
     text-align: center;
@@ -10108,11 +10107,52 @@ p {
     -webkit-background-size: 750px auto;
     -moz-background-size: 750px auto;
     -o-background-size: 750px auto;
-    background-size: 750px auto; } }
+    background-size: 750px auto; }
+  .list {
+    margin-left: 10%; }
+  .main-images {
+    margin-top: 20px; } }
+
+/***MEDIA QUERIES**/
+/* for 1300px and up */
+@media screen and (min-width: 1300px) {
+  .full-image {
+    margin-left: 40%; }
+  .list {
+    margin-left: 13%; } }
+
+/***MEDIA QUERIES**/
+/* for 1364px and up */
+@media screen and (min-width: 1364px) {
+  .philippines {
+    width: 90%; }
+  .philippines, .us, .travels, .lizzy {
+    width: 96%;
+    margin: auto; } }
 
 /***MEDIA QUERIES**/
 /* for 1500px and up */
 @media screen and (min-width: 1500px) {
-  .tagline {
-    max-width: 700px;
+  .item-text-wrap img {
+    margin-left: 41%; }
+  .list {
+    margin-left: 20%; }
+  .philippines, .us, .travels, .lizzy {
+    width: 92%;
+    margin: auto; } }
+
+/***MEDIA QUERIES**/
+/* for 1660px and up */
+@media screen and (min-width: 1600px) {
+  .philippines, .us, .travels, .lizzy {
+    width: 85%;
+    margin: auto; } }
+
+/***MEDIA QUERIES**/
+/* for 1800px and up */
+@media screen and (min-width: 1800px) {
+  .list {
+    margin-left: 25%; }
+  .philippines, .us, .travels, .lizzy {
+    width: 74%;
     margin: auto; } }

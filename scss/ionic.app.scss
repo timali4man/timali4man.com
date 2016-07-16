@@ -93,7 +93,7 @@ p {
   max-width: 1000px;
   margin: 20px 10px;
   img {
-    margin-left: 10%;
+    margin-left: 25%;
     width: 200px;
     height: auto;
     text-align: center;
@@ -115,7 +115,7 @@ p {
 
 .full-image {
   width: 200px;
-  margin-left: 6%;
+  margin-left: 25%;
 }
 
 .list {
@@ -260,8 +260,7 @@ p {
   }
 
   .tagline {
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
     height: 35px;
   }
   .timalipic {
@@ -272,6 +271,12 @@ p {
     -o-background-size: 600px auto;
     background-size: 600px auto;
   }
+
+  .item-text-wrap {
+    img {
+      margin-left: 85%;
+    }
+  }
 }
 
 /***MEDIA QUERIES**/
@@ -279,7 +284,7 @@ p {
 @media screen and (min-width: 700px) {
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     padding-top: 15px;
   }
 
@@ -301,9 +306,14 @@ p {
   }
 
   .tagline {
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
     height: 55px;
+  }
+
+  .item-text-wrap {
+    img {
+      margin-left: 37%;
+    }
   }
 }
 
@@ -337,8 +347,7 @@ p {
   }
 
   .tagline {
-    margin-left: 20%;
-    width: 60%;
+    width: 100%;
     height: 60px;
   }
 
@@ -386,8 +395,6 @@ p {
   }
 
   .tagline {
-    max-width: 700px;
-    margin: auto;
     height: 80px;
   }
 
@@ -405,13 +412,81 @@ p {
     -o-background-size: 750px auto;
     background-size: 750px auto;
   }
+
+  .list {
+    margin-left: 10%;
+  }
+
+  .main-images {
+    margin-top: 20px;
+  }
+}
+
+
+/***MEDIA QUERIES**/
+/* for 1300px and up */
+@media screen and (min-width: 1300px) {
+  
+  .full-image {
+    margin-left: 40%;
+  }
+
+  .list {
+    margin-left: 13%;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1364px and up */
+@media screen and (min-width: 1364px) {
+  .philippines {
+    width: 90%;
+  }
+
+  .philippines, .us, .travels, .lizzy {
+    width: 96%;
+    margin: auto;
+  }
 }
 
 /***MEDIA QUERIES**/
 /* for 1500px and up */
 @media screen and (min-width: 1500px) {
-  .tagline {
-    max-width: 700px;
+
+  .item-text-wrap {
+    img {
+      margin-left: 41%;
+    }
+  }
+
+  .list {
+    margin-left: 20%;
+  }
+
+  .philippines, .us, .travels, .lizzy {
+    width: 92%;
+    margin: auto;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1660px and up */
+@media screen and (min-width: 1600px) {
+  .philippines, .us, .travels, .lizzy {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1800px and up */
+@media screen and (min-width: 1800px) {
+  .list {
+    margin-left: 25%;
+  }
+
+  .philippines, .us, .travels, .lizzy {
+    width: 74%;
     margin: auto;
   }
 }
