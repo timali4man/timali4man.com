@@ -47,6 +47,14 @@ p {
   line-height: 20px;
 }
 
+.home-background {
+  background: url(../img/homeBk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .portfolio {
   background-color: #387EF5;
 }
@@ -199,14 +207,6 @@ p {
   background-color: rgba(254, 255, 254, 0.5);
 }
 
-.timalipic {
-  background: url(../img/23crop.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .transparent {
   background: rgba(0,0,0,0.7);
 }
@@ -234,6 +234,21 @@ p {
 
 .uspic {
   background-color: #5170BE;
+}
+
+.asideOne {
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+.home-image {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+#main-home-image {
+  width: 100%;
 }
 
 /* for 500px to 980px landscape */
@@ -267,14 +282,6 @@ p {
     width: 100%;
     height: 35px;
   }
-  .timalipic {
-    background: url(../img/23crop.jpg) no-repeat center center fixed;
-    background-color: #6D93C3;
-    -webkit-background-size: 600px auto;
-    -moz-background-size: 600px auto;
-    -o-background-size: 600px auto;
-    background-size: 600px auto;
-  }
 
   .item-text-wrap {
     img {
@@ -300,15 +307,6 @@ p {
     text-align: center;
   }
 
-  .timalipic {
-    background: url(../img/23crop.jpg) no-repeat center center fixed;
-    background-color: #6D93C3;
-    -webkit-background-size: 650px auto;
-    -moz-background-size: 650px auto;
-    -o-background-size: 650px auto;
-    background-size: 650px auto;
-  }
-
   .tagline {
     width: 100%;
     height: 55px;
@@ -318,6 +316,15 @@ p {
     img {
       margin-left: 37%;
     }
+  }
+
+  .home-image {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  #main-home-image {
+    width: 100%;
   }
 }
 
@@ -353,15 +360,6 @@ p {
   .tagline {
     width: 100%;
     height: 60px;
-  }
-
-  .timalipic {
-    background: url(../img/23crop.jpg) no-repeat center center fixed;
-    background-color: #6D93C3;
-    -webkit-background-size: 650px auto;
-    -moz-background-size: 650px auto;
-    -o-background-size: 650px auto;
-    background-size: 650px auto;
   }
 }
 
@@ -417,21 +415,29 @@ p {
     margin-bottom: 10px;
   }
 
-  .timalipic {
-    background: url(../img/23crop.jpg) no-repeat center center fixed;
-    background-color: #6D93C3;
-    -webkit-background-size: 750px auto;
-    -moz-background-size: 750px auto;
-    -o-background-size: 750px auto;
-    background-size: 750px auto;
-  }
-
   .list {
     margin-left: 10%;
   }
 
   .main-images {
     margin-top: 20px;
+  }
+
+  .home-image {
+    float: left;
+    max-width: 40%;
+    margin-left: 1%;
+  }
+
+  #main-home-image {
+    width: 100%;
+  }
+
+  .asideOne {
+    float: left;
+    width: 56%;
+    margin-left: 10px;
+    margin-top: 2px;
   }
 }
 
@@ -445,6 +451,19 @@ p {
 
   .list {
     margin-left: 13%;
+  }
+
+  .asideOne{
+    float: left;
+    width: 58%;
+  }
+
+  .main-content {
+    max-width: 1440px;
+  }
+
+  .timalipic {
+    margin-left: 10%;
   }
 }
 
@@ -461,6 +480,11 @@ p {
   .list {
     margin-left: 20%;
   }
+
+  .asideOne{
+    float: left;
+    width: 58%;
+  }
 }
 
 /***MEDIA QUERIES**/
@@ -468,6 +492,15 @@ p {
 @media screen and (min-width: 1800px) {
   .list {
     margin-left: 25%;
+  }
+
+  .asideOne{
+    float: left;
+    width: 58%;
+  }
+
+  .timalipic {
+    margin-left: 15%;
   }
 }
 
