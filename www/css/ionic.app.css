@@ -9895,12 +9895,13 @@ p {
     background-color: #6D94C2;
     font-size: 1.1em;
     text-align: center;
-    margin-right: 0;
+    margin: 15px 0 0 20px;
     padding: 5px; }
   .item-text-wrap p {
     font-size: 1em;
     text-align: left;
-    padding: 5px 0; }
+    padding: 5px 0;
+    margin: 15px 0 0 20px; }
 
 .full-image {
   width: 200px;
@@ -9983,17 +9984,16 @@ p {
   max-width: 1390px;
   margin: auto; }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .home-aside {
   background-color: rgba(254, 255, 254, 0.3); }
-  .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p {
-    padding: 5px; }
+  .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p, .home-aside h2, .home-aside h3, .home-aside h4, .home-aside p {
+    padding: 15px 20px 0 20px; }
 
 .uspic {
   background-color: #5170BE; }
 
-.asideOne {
-  margin-top: 5%;
-  margin-left: 5%; }
+.home-aside {
+  margin: 5%; }
 
 .home-image {
   max-width: 90%;
@@ -10024,7 +10024,11 @@ p {
     width: 100%;
     height: 35px; }
   .item-text-wrap img {
-    margin-left: 85%; } }
+    margin-left: 85%; }
+  .item-text-wrap h3, .item-text-wrap p {
+    margin: 15px 0 0 20px; }
+  .full-image {
+    margin-left: 40%; } }
 
 /***MEDIA QUERIES**/
 /* for 700px or more portrait */
@@ -10041,6 +10045,8 @@ p {
     height: 55px; }
   .item-text-wrap img {
     margin-left: 37%; }
+  .item-text-wrap .full-image {
+    margin-left: 40%; }
   .home-image {
     max-width: 90%;
     margin-left: 5%; }
@@ -10069,7 +10075,9 @@ p {
     text-align: center; }
   .tagline {
     width: 100%;
-    height: 60px; } }
+    height: 60px; }
+  .full-image {
+    margin-left: 40%; } }
 
 /***MEDIA QUERIES**/
 /* for 945px and up */
@@ -10107,20 +10115,39 @@ p {
     height: 600px;
     margin-bottom: 10px; }
   .list {
-    margin-left: 10%; }
+    margin-left: 1%; }
   .main-images {
     margin-top: 20px; }
   .home-image {
     float: left;
-    max-width: 40%;
+    max-width: 35%;
     margin-left: 1%; }
   #main-home-image {
     width: 100%; }
-  .asideOne {
+  .home-aside {
     float: left;
-    width: 56%;
-    margin-left: 10px;
-    margin-top: 2px; } }
+    width: 60%;
+    margin: 0 0 0 15px; }
+  .main-content {
+    margin-left: 1%; } }
+
+/***MEDIA QUERIES**/
+/* for 1040px and up */
+@media screen and (min-width: 1040px) {
+  .list {
+    margin-left: 5%; } }
+
+/***MEDIA QUERIES**/
+/* for 1150px and up */
+@media screen and (min-width: 1150px) {
+  .list {
+    margin-left: 7%; } }
+
+/***MEDIA QUERIES**/
+/* for 1200px and up */
+@media screen and (min-width: 1200px) {
+  .list {
+    margin-left: 10%; } }
 
 /***MEDIA QUERIES**/
 /* for 1300px and up */
@@ -10129,32 +10156,41 @@ p {
     margin-left: 40%; }
   .list {
     margin-left: 13%; }
-  .asideOne {
+  .home-aside {
     float: left;
     width: 58%; }
   .main-content {
-    max-width: 1440px; }
-  .timalipic {
-    margin-left: 10%; } }
+    max-width: 1440px;
+    margin-left: 1%; } }
 
 /***MEDIA QUERIES**/
 /* for 1500px and up */
 @media screen and (min-width: 1500px) {
   .item-text-wrap img {
     margin-left: 41%; }
+  .item-text-wrap h3, .item-text-wrap p {
+    margin: 15px 0 0 20px; }
   .list {
     margin-left: 20%; }
-  .asideOne {
+  .home-aside {
     float: left;
-    width: 58%; } }
+    width: 58%; }
+  .main-content {
+    margin-left: 3%; } }
+
+/***MEDIA QUERIES**/
+/* for 1600px and up */
+@media screen and (min-width: 1600px) {
+  .main-content {
+    margin-left: 9%; } }
 
 /***MEDIA QUERIES**/
 /* for 1800px and up */
 @media screen and (min-width: 1800px) {
   .list {
     margin-left: 25%; }
-  .asideOne {
+  .home-aside {
     float: left;
-    width: 58%; }
-  .timalipic {
+    width: 55%; }
+  .main-content {
     margin-left: 15%; } }

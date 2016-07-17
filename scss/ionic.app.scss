@@ -115,13 +115,14 @@ p {
     background-color: #6D94C2;
     font-size: 1.1em;
     text-align: center;
-    margin-right: 0;
+    margin: 15px 0 0 20px;
     padding: 5px;
   }
   p {
     font-size: 1em;
     text-align: left;
     padding: 5px 0;
+    margin: 15px 0 0 20px;
   }
 }
 
@@ -225,10 +226,10 @@ p {
   margin: auto;
 }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .home-aside {
   background-color: rgba(254, 255, 254, 0.3);
-  h3, h4, p {
-      padding: 5px;
+  h2, h3, h4, p {
+      padding: 15px 20px 0 20px;
   }
 }
 
@@ -236,10 +237,8 @@ p {
   background-color: #5170BE;
 }
 
-.asideOne {
-  margin-top: 5%;
-  margin-left: 5%;
-
+.home-aside {
+  margin: 5%;
 }
 
 .home-image {
@@ -287,6 +286,13 @@ p {
     img {
       margin-left: 85%;
     }
+    h3, p {
+    margin: 15px 0 0 20px;
+    }
+  }
+
+  .full-image {
+    margin-left: 40%;
   }
 }
 
@@ -316,6 +322,10 @@ p {
     img {
       margin-left: 37%;
     }
+
+  .full-image {
+    margin-left: 40%;
+  }
   }
 
   .home-image {
@@ -360,6 +370,10 @@ p {
   .tagline {
     width: 100%;
     height: 60px;
+  }
+
+  .full-image {
+    margin-left: 40%;
   }
 }
 
@@ -416,7 +430,7 @@ p {
   }
 
   .list {
-    margin-left: 10%;
+    margin-left: 1%;
   }
 
   .main-images {
@@ -425,7 +439,7 @@ p {
 
   .home-image {
     float: left;
-    max-width: 40%;
+    max-width: 35%;
     margin-left: 1%;
   }
 
@@ -433,11 +447,38 @@ p {
     width: 100%;
   }
 
-  .asideOne {
+  .home-aside {
     float: left;
-    width: 56%;
-    margin-left: 10px;
-    margin-top: 2px;
+    width: 60%;
+    margin: 0 0 0 15px;
+  }
+
+  .main-content {
+    margin-left: 1%;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1040px and up */
+@media screen and (min-width: 1040px) {
+  .list {
+    margin-left: 5%;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1150px and up */
+@media screen and (min-width: 1150px) {
+  .list {
+    margin-left: 7%;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1200px and up */
+@media screen and (min-width: 1200px) {
+  .list {
+    margin-left: 10%;
   }
 }
 
@@ -453,17 +494,14 @@ p {
     margin-left: 13%;
   }
 
-  .asideOne{
+  .home-aside{
     float: left;
     width: 58%;
   }
 
   .main-content {
     max-width: 1440px;
-  }
-
-  .timalipic {
-    margin-left: 10%;
+    margin-left: 1%;
   }
 }
 
@@ -475,31 +513,48 @@ p {
     img {
       margin-left: 41%;
     }
+    h3, p {
+      margin: 15px 0 0 20px;
+    }
   }
 
   .list {
     margin-left: 20%;
   }
 
-  .asideOne{
+  .home-aside{
     float: left;
     width: 58%;
+  }
+
+  .main-content {
+    margin-left: 3%;
+  }
+}
+
+/***MEDIA QUERIES**/
+/* for 1600px and up */
+@media screen and (min-width: 1600px) {
+
+  .main-content {
+    margin-left: 9%;
   }
 }
 
 /***MEDIA QUERIES**/
 /* for 1800px and up */
 @media screen and (min-width: 1800px) {
+  
   .list {
     margin-left: 25%;
   }
 
-  .asideOne{
+  .home-aside{
     float: left;
-    width: 58%;
+    width: 55%;
   }
 
-  .timalipic {
+  .main-content {
     margin-left: 15%;
   }
 }
