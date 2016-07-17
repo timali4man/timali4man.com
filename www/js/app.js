@@ -150,6 +150,40 @@ angular.module('starter', ['ionic'])
     src: 'img/pi_pics/Baguio8.jpg'
   }];
 
+  $scope.lucbanImages = [{
+    src: 'img/lucban_pics/00.jpg'
+  }, {
+    src: 'img/lucban_pics/01.jpg'
+  }, {
+    src: 'img/lucban_pics/02.jpg'
+  }, {
+    src: 'img/lucban_pics/03.jpg'
+  }, {
+    src: 'img/lucban_pics/04.jpg'
+  }, {
+    src: 'img/lucban_pics/05.jpg'
+  }, {
+    src: 'img/lucban_pics/06.jpg'
+  }, {
+    src: 'img/lucban_pics/07.jpg'
+  }, {
+    src: 'img/lucban_pics/08.jpg'
+  }, {
+    src: 'img/lucban_pics/09.jpg'
+  }, {
+    src: 'img/lucban_pics/10.jpg'
+  }, {
+    src: 'img/lucban_pics/11.jpg'
+  }, {
+    src: 'img/lucban_pics/12.jpg'
+  }, {
+    src: 'img/lucban_pics/13.jpg'
+  }, {
+    src: 'img/lucban_pics/14.jpg'
+  }, {
+    src: 'img/lucban_pics/15.jpg'
+  }];
+
   $scope.travelsImages = [{
     src: 'img/travels_pics/HongKong31.jpg'
   }, {
@@ -216,6 +250,11 @@ angular.module('starter', ['ionic'])
   $scope.showPiImages = function(index) {
   $scope.activeSlide = index;
   $scope.showModal('templates/pi-gallery-zoomview.html');
+  };
+
+  $scope.showLucbanImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/luc-gallery-zoomview.html');
   };
 
   $scope.showTravelsImages = function(index) {

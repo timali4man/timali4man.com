@@ -9844,6 +9844,13 @@ p {
   -o-background-size: cover;
   background-size: cover; }
 
+.lucban-floor-plan {
+  max-width: 90%;
+  margin-left: 5%; }
+
+#floor-plan {
+  width: 100%; }
+
 .portfolio {
   background-color: #387EF5; }
 
@@ -9985,10 +9992,10 @@ p {
   max-width: 1390px;
   margin: auto; }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .lucban-frame {
   margin-top: 20px;
   background-color: rgba(254, 255, 254, 0.3); }
-  .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p {
+  .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p, .lucban-frame h2, .lucban-frame h3, .lucban-frame h4, .lucban-frame p {
     padding: 15px 20px 0 20px; }
 
 .uspic {

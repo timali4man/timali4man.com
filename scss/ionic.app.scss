@@ -55,6 +55,15 @@ p {
   background-size: cover;
 }
 
+.lucban-floor-plan {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+#floor-plan {
+  width: 100%;
+}
+
 .portfolio {
   background-color: #387EF5;
 }
@@ -227,7 +236,7 @@ p {
   margin: auto;
 }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .lucban-frame  {
   margin-top: 20px;
   background-color: rgba(254, 255, 254, 0.3);
   h2, h3, h4, p {
@@ -244,7 +253,7 @@ p {
   background-color: rgba(254, 255, 254, 0.3);
   h2, h3 {
     padding: 0 20px 0 20px;
-  } 
+  }
   p {
     padding: 5px 20px 5px 20px;
   }
@@ -458,7 +467,7 @@ figure img {
     max-width: 1083px;
     h2, h3 {
       padding: 0 20px 0 20px;
-    } 
+    }
     p {
       padding: 10px 20px 0 20px;
     }
@@ -552,7 +561,7 @@ figure img {
 /***MEDIA QUERIES**/
 /* for 1800px and up */
 @media screen and (min-width: 1800px) {
-  
+
   .list {
     margin-left: 25%;
   }
