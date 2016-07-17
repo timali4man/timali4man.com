@@ -9865,6 +9865,7 @@ p {
   left: 0 !important; }
 
 .item-list-detail {
+  margin-top: 20px;
   text-align: center;
   background-color: rgba(254, 255, 254, 0.3); }
 
@@ -9984,23 +9985,33 @@ p {
   max-width: 1390px;
   margin: auto; }
 
-.us-frame, .pi-frame, .travels-frame, .lizzy-frame, .home-aside {
+.us-frame, .pi-frame, .travels-frame, .lizzy-frame {
+  margin-top: 20px;
   background-color: rgba(254, 255, 254, 0.3); }
-  .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p, .home-aside h2, .home-aside h3, .home-aside h4, .home-aside p {
+  .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p {
     padding: 15px 20px 0 20px; }
 
 .uspic {
   background-color: #5170BE; }
 
-.home-aside {
-  margin: 5%; }
-
 .home-image {
-  max-width: 90%;
-  margin-left: 5%; }
+  max-width: 100%;
+  background-color: rgba(254, 255, 254, 0.3); }
+  .home-image h2, .home-image h3 {
+    padding: 0 20px 0 20px; }
+  .home-image p {
+    padding: 5px 20px 5px 20px; }
 
-#main-home-image {
-  width: 100%; }
+.main-home-image {
+  margin-right: 20px;
+  margin-top: 1%; }
+
+figure img {
+  float: left;
+  width: 50%; }
+
+.main-content {
+  margin-top: 20px; }
 
 /* for 500px to 980px landscape */
 @media screen and (min-width: 500px) and (orientation: landscape) {
@@ -10036,8 +10047,6 @@ p {
   h1 {
     font-size: 3em;
     padding-top: 15px; }
-  .item-list-detail {
-    margin-top: 10px; }
   .main-images {
     text-align: center; }
   .tagline {
@@ -10048,10 +10057,7 @@ p {
   .item-text-wrap .full-image {
     margin-left: 40%; }
   .home-image {
-    max-width: 90%;
-    margin-left: 5%; }
-  #main-home-image {
-    width: 100%; } }
+    max-width: 100%; } }
 
 /***MEDIA QUERIES**/
 /* for 700px or more landscape */
@@ -10106,8 +10112,6 @@ p {
     font-size: 1.35em;
     font-weight: 400;
     line-height: 20px; }
-  .item-list-detail {
-    margin-top: 10px; }
   .tagline {
     height: 80px; }
   .main-images {
@@ -10119,17 +10123,7 @@ p {
   .main-images {
     margin-top: 20px; }
   .home-image {
-    float: left;
-    max-width: 35%;
-    margin-left: 1%; }
-  #main-home-image {
-    width: 100%; }
-  .home-aside {
-    float: left;
-    width: 60%;
-    margin: 0 0 0 15px; }
-  .main-content {
-    margin-left: 1%; } }
+    max-width: 100%; } }
 
 /***MEDIA QUERIES**/
 /* for 1040px and up */
@@ -10138,16 +10132,34 @@ p {
     margin-left: 5%; } }
 
 /***MEDIA QUERIES**/
+/* for 1050px and up */
+@media screen and (min-width: 1050px) {
+  .home-image {
+    max-width: 1083px; }
+    .home-image h2, .home-image h3 {
+      padding: 0 20px 0 20px; }
+    .home-image p {
+      padding: 10px 20px 0 20px; }
+  figure img {
+    width: 46%; } }
+
+/***MEDIA QUERIES**/
 /* for 1150px and up */
 @media screen and (min-width: 1150px) {
   .list {
-    margin-left: 7%; } }
+    margin-left: 7%; }
+  .home-image {
+    margin-left: 3%; } }
 
 /***MEDIA QUERIES**/
 /* for 1200px and up */
 @media screen and (min-width: 1200px) {
   .list {
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .home-image {
+    margin-left: 5%; }
+  .main-content {
+    margin-left: 1.5%; } }
 
 /***MEDIA QUERIES**/
 /* for 1300px and up */
@@ -10156,12 +10168,10 @@ p {
     margin-left: 40%; }
   .list {
     margin-left: 13%; }
-  .home-aside {
-    float: left;
-    width: 58%; }
   .main-content {
-    max-width: 1440px;
-    margin-left: 1%; } }
+    max-width: 1440px; }
+  .home-image {
+    margin-left: 8%; } }
 
 /***MEDIA QUERIES**/
 /* for 1500px and up */
@@ -10172,11 +10182,8 @@ p {
     margin: 15px 0 0 20px; }
   .list {
     margin-left: 20%; }
-  .home-aside {
-    float: left;
-    width: 58%; }
   .main-content {
-    margin-left: 3%; } }
+    margin-left: 7%; } }
 
 /***MEDIA QUERIES**/
 /* for 1600px and up */
@@ -10189,8 +10196,5 @@ p {
 @media screen and (min-width: 1800px) {
   .list {
     margin-left: 25%; }
-  .home-aside {
-    float: left;
-    width: 55%; }
   .main-content {
-    margin-left: 15%; } }
+    margin-left: 16%; } }
