@@ -10023,9 +10023,7 @@ p {
 
 .main-home-image {
   max-width: 45%;
-  margin-right: 20px;
-  margin-top: 1%;
-  margin-bottom: 1%; }
+  margin: 1%; }
 
 figure img {
   float: left;
