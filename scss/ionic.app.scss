@@ -242,6 +242,17 @@ p {
   h2, h3, h4, p {
       padding: 15px 20px 0 20px;
   }
+  a {
+    color: black;
+    margin-left: 20%;
+    line-height: 2;
+    &:visited {
+      color: #1215B2;
+    }
+    &:hover {
+      color: red;
+    }
+  }
 }
 
 .uspic {

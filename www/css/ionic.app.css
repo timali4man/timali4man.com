@@ -9997,6 +9997,14 @@ p {
   background-color: rgba(254, 255, 254, 0.3); }
   .us-frame h2, .us-frame h3, .us-frame h4, .us-frame p, .pi-frame h2, .pi-frame h3, .pi-frame h4, .pi-frame p, .travels-frame h2, .travels-frame h3, .travels-frame h4, .travels-frame p, .lizzy-frame h2, .lizzy-frame h3, .lizzy-frame h4, .lizzy-frame p, .lucban-frame h2, .lucban-frame h3, .lucban-frame h4, .lucban-frame p {
     padding: 15px 20px 0 20px; }
+  .us-frame a, .pi-frame a, .travels-frame a, .lizzy-frame a, .lucban-frame a {
+    color: black;
+    margin-left: 20%;
+    line-height: 2; }
+    .us-frame a:visited, .pi-frame a:visited, .travels-frame a:visited, .lizzy-frame a:visited, .lucban-frame a:visited {
+      color: #1215B2; }
+    .us-frame a:hover, .pi-frame a:hover, .travels-frame a:hover, .lizzy-frame a:hover, .lucban-frame a:hover {
+      color: red; }
 
 .uspic {
   background-color: #5170BE; }
