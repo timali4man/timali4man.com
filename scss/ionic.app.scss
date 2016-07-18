@@ -25,6 +25,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   display: none;
 }
 
+.main-content {
+  max-width: 94%;
+  margin-left: 3%;
+}
+
 h1, h3, h4, p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2.25em;
@@ -511,10 +516,6 @@ figure img {
   .home-image {
     margin-left: 5%;
   }
-
-  .main-content {
-    margin-left: 1.5%;
-  }
 }
 
 /***MEDIA QUERIES**/
@@ -554,19 +555,6 @@ figure img {
   .list {
     margin-left: 20%;
   }
-
-  .main-content {
-    margin-left: 7%;
-  }
-}
-
-/***MEDIA QUERIES**/
-/* for 1600px and up */
-@media screen and (min-width: 1600px) {
-
-  .main-content {
-    margin-left: 9%;
-  }
 }
 
 /***MEDIA QUERIES**/
@@ -575,10 +563,6 @@ figure img {
 
   .list {
     margin-left: 25%;
-  }
-
-  .main-content {
-    margin-left: 16%;
   }
 }
 
