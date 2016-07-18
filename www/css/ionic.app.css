@@ -9818,6 +9818,10 @@ a.button {
 #preload {
   display: none; }
 
+.main-content {
+  max-width: 94%;
+  margin-left: 3%; }
+
 h1, h3, h4, p {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2.25em;
@@ -10018,8 +10022,8 @@ p {
     padding: 5px 20px 5px 20px; }
 
 .main-home-image {
-  margin-right: 20px;
-  margin-top: 1%; }
+  max-width: 45%;
+  margin: 1%; }
 
 figure img {
   float: left;
@@ -10070,9 +10074,7 @@ figure img {
   .item-text-wrap img {
     margin-left: 37%; }
   .item-text-wrap .full-image {
-    margin-left: 40%; }
-  .home-image {
-    max-width: 100%; } }
+    margin-left: 40%; } }
 
 /***MEDIA QUERIES**/
 /* for 700px or more landscape */
@@ -10136,9 +10138,7 @@ figure img {
   .list {
     margin-left: 1%; }
   .main-images {
-    margin-top: 20px; }
-  .home-image {
-    max-width: 100%; } }
+    margin-top: 20px; } }
 
 /***MEDIA QUERIES**/
 /* for 1040px and up */
@@ -10149,18 +10149,18 @@ figure img {
 /***MEDIA QUERIES**/
 /* for 1050px and up */
 @media screen and (min-width: 1050px) {
-  .home-image {
-    max-width: 1083px; }
-    .home-image h2, .home-image h3 {
-      padding: 0 20px 0 20px; }
-    .home-image p {
-      padding: 10px 20px 0 20px; }
+  .home-image h2, .home-image h3 {
+    padding: 0 20px 0 20px; }
+  .home-image p {
+    padding: 10px 20px 0 20px; }
   figure img {
     width: 46%; } }
 
 /***MEDIA QUERIES**/
 /* for 1150px and up */
 @media screen and (min-width: 1150px) {
+  .main-content {
+    max-width: 1110px; }
   .list {
     margin-left: 7%; }
   .home-image {
@@ -10170,11 +10170,7 @@ figure img {
 /* for 1200px and up */
 @media screen and (min-width: 1200px) {
   .list {
-    margin-left: 10%; }
-  .home-image {
-    margin-left: 5%; }
-  .main-content {
-    margin-left: 1.5%; } }
+    margin-left: 10%; } }
 
 /***MEDIA QUERIES**/
 /* for 1300px and up */
@@ -10182,11 +10178,7 @@ figure img {
   .full-image {
     margin-left: 40%; }
   .list {
-    margin-left: 13%; }
-  .main-content {
-    max-width: 1440px; }
-  .home-image {
-    margin-left: 8%; } }
+    margin-left: 13%; } }
 
 /***MEDIA QUERIES**/
 /* for 1500px and up */
@@ -10196,20 +10188,10 @@ figure img {
   .item-text-wrap h3, .item-text-wrap p {
     margin: 15px 0 0 20px; }
   .list {
-    margin-left: 20%; }
-  .main-content {
-    margin-left: 7%; } }
-
-/***MEDIA QUERIES**/
-/* for 1600px and up */
-@media screen and (min-width: 1600px) {
-  .main-content {
-    margin-left: 9%; } }
+    margin-left: 20%; } }
 
 /***MEDIA QUERIES**/
 /* for 1800px and up */
 @media screen and (min-width: 1800px) {
   .list {
-    margin-left: 25%; }
-  .main-content {
-    margin-left: 16%; } }
+    margin-left: 25%; } }
